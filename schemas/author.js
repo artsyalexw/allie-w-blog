@@ -31,14 +31,9 @@ export default defineType({
       name: 'bio',
       title: 'Bio',
       type: 'array',
-      of: [
-        {
-          title: 'Block',
-          type: 'block',
-          styles: [{title: 'Normal', value: 'normal'}],
-          lists: [],
-        },
-      ],
+      of: {
+        type: 'block',
+      },
     }),
   ],
   preview: {
